@@ -1,0 +1,801 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\DownloadDemon.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DownloadDemon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Download Demon"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Download Demon Version 1.1",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998-1999 unHUman Software",IDC_STATIC,40,
+                    25,143,8
+    LTEXT           "This program is shareware.  If you like it, please make a donation of $10 to:",
+                    IDC_STATIC,39,39,146,19
+    LTEXT           "Howard Uman",IDC_STATIC,51,60,49,8
+    LTEXT           "137 Westminster Avenue",IDC_STATIC,51,69,80,8
+    LTEXT           "Arlington, MA  02474",IDC_STATIC,51,77,67,8
+    LTEXT           "Contributing will encourage us to continue to improve and develop this and other shareware offerings.",
+                    IDC_STATIC,39,108,171,19
+    LTEXT           "Email: human@unhuman.com",IDC_STATIC,51,86,114,8
+    LTEXT           "WWW: http://www.unhuman.com",IDC_STATIC,51,95,149,8
+END
+
+IDD_DIALOG_DOWNLOADDEMON DIALOGEX 0, 0, 284, 174
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_APPWINDOW
+CAPTION "Download Demon"
+MENU IDR_MENU_APPLICATION
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST_FTP_ITEMS,"SysListView32",LVS_REPORT | 
+                    LVS_OWNERDRAWFIXED | WS_BORDER | WS_TABSTOP,6,6,270,126,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Start Downloads",IDC_BUTTON_DOWNLOAD,66,138,66,14
+    COMBOBOX        IDC_COMBO_WHENDOWNLOAD,140,138,33,54,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_STARTTIME,180,138,61,75,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Disconnect modem upon completion",
+                    IDC_CHECK_DISCONNECTDONE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,75,159,130,9
+END
+
+IDD_DIALOG_SETTINGS DIALOGEX 0, 0, 253, 237
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Download Demon Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_DEFAULTLOGIN,55,6,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEFAULTPASSWORD,170,6,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DOWNLOAD_DIR,73,57,153,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_LOOKUP_DIR,226,57,20,12
+    CONTROL         "Skip Download",IDC_RADIO_DUPE_SKIP,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,66,75,64,10
+    CONTROL         "Overwrite",IDC_RADIO_DUPE_OVERWRITE,"Button",
+                    BS_AUTORADIOBUTTON,132,75,46,10
+    COMBOBOX        IDC_COMBO_SIMULTANEOUS_DOWNLOADS,123,90,26,64,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,
+                    WS_EX_RIGHT
+    CONTROL         "Use SmartDownload to optimize connections",
+                    IDC_CHECK_SMARTDOWNLOAD,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,105,164,10
+    CONTROL         "Allow multiple connections to same server",
+                    IDC_CHECK_MULTIPLE_IDENTICAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,117,148,10
+    EDITTEXT        IDC_EDIT_CONNECTION_TIMEOUT,75,135,21,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_RETRY_TIME,147,135,21,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_EDIT_RETRY_COUNT,225,135,21,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Manage Strip File Extensions",
+                    IDC_BUTTON_MANAGE_STRIP_EXTENSIONS,74,157,106,14
+    CONTROL         "Dial Modem",IDC_CHECK_DIALMODEM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,182,53,12
+    COMBOBOX        IDC_COMBO_DIALCONNECTION,60,182,129,63,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Advanced...",IDC_BUTTON_MODEMSTRINGS,195,181,50,14
+    CONTROL         "Minimize Dial-Up Networking after connected",
+                    IDC_CHECK_MINIMIZEDIALUP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,197,204,10
+    DEFPUSHBUTTON   "OK",IDOK,73,217,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,217,50,14
+    LTEXT           "Default Login:",IDC_STATIC_DEFAULTLOGIN,7,6,46,12,
+                    SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Password:",IDC_STATIC_DEFAULTPASSWORD,132,6,36,12,
+                    SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Often, the Default Login should be set to 'anonymous'.  The Password could be your email address.  To protect yourself from spamming, you should make up an invalid address (nobody@nowhere.com).",
+                    IDC_STATIC_SETTING_INFO,7,22,240,26
+    LTEXT           "Download Directory:",IDC_STATIC_DOWNLOAD_DIR,7,58,66,10,
+                    SS_CENTERIMAGE
+    LTEXT           "Existing Files:",IDC_STATIC,21,75,43,8
+    LTEXT           "Maximum Simultaneous Downloads:",IDC_STATIC,7,90,114,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Connection Timeout:",IDC_STATIC,7,137,66,8,
+                    SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Retry Time:",IDC_STATIC,99,137,45,10,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+    LTEXT           "Num Retries:",IDC_STATIC,177,137,45,8,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,51,240,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,176,240,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,211,240,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,151,240,1
+END
+
+IDD_DIALOG_STOPPING_NOTICE DIALOG DISCARDABLE  0, 0, 187, 62
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Please Wait..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Download Demon is waiting for the download threads to stop.  This could take a few seconds.  Please wait.",
+                    IDC_STATIC_MESSAGE,6,6,177,18
+    LTEXT           "Downloads currently running: %d.",IDC_STATIC_THREADS,6,
+                    27,177,8
+    LTEXT           "This should take fewer than %d seconds.  Try #%d.",
+                    IDC_STATIC_TIMELEFT,6,42,177,8
+END
+
+IDD_LINK_PROPERTIES DIALOGEX 0, 0, 192, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_LINK,25,7,160,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_XFER_MODE,80,27,42,42,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_STRIP,147,27,39,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Specify destination directory",
+                    IDC_CHECK_SPECIFY_DESTINATIONDIR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,46,132,9
+    EDITTEXT        IDC_EDIT_DESTINATION_DIRECTORY,51,59,116,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_LOOKUP_DESTDIR,167,59,18,14
+    CONTROL         "Specify unique login info",IDC_CHECK_SPECIFY_LOGIN_INFO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,82,132,9
+    EDITTEXT        IDC_EDIT_LOGIN,51,97,75,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,51,118,75,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,42,145,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,145,50,14
+    LTEXT           "Link:",IDC_LINK,7,7,17,14,SS_CENTERIMAGE
+    LTEXT           "Transfer Mode:",IDC_STATIC,30,27,48,12,SS_CENTERIMAGE
+    LTEXT           "Strip:",IDC_STATIC,127,27,19,12,SS_CENTERIMAGE
+    RTEXT           "Login:",IDC_STATIC,25,97,24,15,SS_CENTERIMAGE
+    RTEXT           "Password:",IDC_STATIC,13,118,36,12,SS_CENTERIMAGE
+    LTEXT           "Directory:",IDC_STATIC,0,59,48,14,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+END
+
+IDD_WAIVER DIALOG DISCARDABLE  0, 0, 186, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Welcome To Download Demon"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Disagree",IDCANCEL,98,145,50,14
+    CONTROL         "Do not display this message again",
+                    IDC_CHECK_DISABLE_LIABILITY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,31,165,122,10
+    PUSHBUTTON      "Agree",IDOK,35,145,50,14
+    LTEXT           "Bkgrnd",IDC_STATIC_BACKGROUND,6,147,24,8
+    LTEXT           "Thank you for trying Download Demon.  Download Demon has the power to simplify your life by handling your internet file transfers for you.",
+                    IDC_STATIC_THANKYOU,7,7,172,25
+    LTEXT           "Download Demon encorporates some powerful functionality that needs to be carefully monitored for accuracy on your system before you can rely on it to function as designed.  Of particular note is the ability to dial and hang up your modem. ",
+                    IDC_STATIC_WAIVER,7,39,172,45
+    LTEXT           "Since modem time can cost money, it is imperative that you test the functionality carefully before you rely on these features unsupervised.",
+                    IDC_STATIC_WAIVER2,7,83,172,28
+    LTEXT           "unHUman Software and Howard Uman are not responsible for any expenses you may incur through the use of this program.",
+                    IDC_STATIC_WAIVER3,7,111,172,26
+END
+
+IDD_MODEM_ADVANCED DIALOGEX 0, 0, 268, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Modem Connection Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_MODEMSCREEN,55,12,165,99,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PARENT,53,33,165,12,ES_AUTOHSCROLL
+    CONTROL         "Partial",IDC_CHECK_PARTIAL_PARENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,224,33,35,12
+    EDITTEXT        IDC_EDIT_BUTTON,53,48,165,12,ES_AUTOHSCROLL
+    CONTROL         "Partial",IDC_CHECK_PARTIAL_BUTTON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,224,48,35,12
+    EDITTEXT        IDC_EDIT_SIBLING1,53,63,165,12,ES_AUTOHSCROLL
+    CONTROL         "Partial",IDC_CHECK_PARTIAL_SIBLING1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,224,63,35,12
+    EDITTEXT        IDC_EDIT_SIBLING2,53,78,165,12,ES_AUTOHSCROLL
+    CONTROL         "Partial",IDC_CHECK_PARTIAL_SIBLING2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,224,78,35,12
+    EDITTEXT        IDC_EDIT_SIBLING3,53,94,165,12,ES_AUTOHSCROLL
+    CONTROL         "Partial",IDC_CHECK_PARTIAL_SIBLING3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,224,94,35,12
+    DEFPUSHBUTTON   "OK",IDOK,45,120,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,105,120,50,14
+    PUSHBUTTON      "Default",IDC_BUTTON_DEFAULT,213,120,50,14
+    GROUPBOX        " Connection ",IDC_STATIC,3,0,261,114
+    LTEXT           "Parent:",IDC_STATIC,27,33,24,12,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+    LTEXT           "Button Press:",IDC_STATIC,6,48,45,12,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+    LTEXT           "Sibling:",IDC_STATIC,27,63,24,12,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+    LTEXT           "Sibling:",IDC_STATIC,27,79,24,12,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+    LTEXT           "Sibling:",IDC_STATIC,27,95,24,12,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+    LTEXT           "Action:",IDC_STATIC,24,15,28,8,0,WS_EX_RIGHT
+END
+
+IDD_DIALOG_REGISTER DIALOGEX 0, 0, 190, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Download Demon Registration"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USERNAME,75,88,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LICENSE,75,103,108,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,39,123,50,14
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,96,123,50,14
+    LTEXT           "Download Demon is shareware.  It has a 30 day trial.  After 30 days, Download Demon will be disabled.  In order to re-enable it, you must obtain a registration code.",
+                    IDC_STATIC,7,18,177,27
+    LTEXT           "Enter your registration information below:",IDC_STATIC,
+                    7,76,162,9
+    LTEXT           "Name:",IDC_STATIC,29,88,43,11,SS_CENTERIMAGE,
+                    WS_EX_RIGHT
+    LTEXT           "Registration Code:",IDC_STATIC,13,103,59,12,
+                    SS_CENTERIMAGE,WS_EX_RIGHT
+    LTEXT           "Download Demon expires in %d days.",IDC_STATIC_NOTICE,7,
+                    7,165,8
+    LTEXT           "Please contact unHUman Software at http://www.unhuman.com for details on obtaining a registration code.",
+                    IDC_STATIC,7,46,176,25
+END
+
+IDD_DIALOG_STRIP_EXTENSION DIALOG DISCARDABLE  0, 0, 130, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Strip Extensions"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST_EXTENSIONS,7,7,45,51,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ADD_EXTENSION,58,7,41,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD_EXTENSION,102,7,21,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE_EXTENSION,58,44,35,14
+    DEFPUSHBUTTON   "OK",IDOK,7,70,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,70,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Download Demon MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Download Demon\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Download Demon.EXE\0"
+            VALUE "ProductName", "Download Demon Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_DIALOG_DOWNLOADDEMON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DIALOG_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_DIALOG_STOPPING_NOTICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_LINK_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_WAIVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_MODEM_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DIALOG_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_DIALOG_STRIP_EXTENSION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_APPLICATION MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Clear List",                 ID_MENU_NEW_LIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Settings",                   ID_MENU_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_MENU_EXIT
+    END
+    POPUP "&Action"
+    BEGIN
+        MENUITEM "&Add Download Item",          ID_ADD_NEW_FILE
+        MENUITEM "&Delete",                     ID_DELETE_SELECTED_FILE
+        MENUITEM "Delete &Completed Items",     ID_DELETE_COMPLETED_ITEMS
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties",                 ID_PROPERTIES_SELECTED_FILE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_MENU_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Register",                   ID_REGISTER
+    END
+END
+
+IDR_POPUP_FILE_LIST MENU DISCARDABLE 
+BEGIN
+    POPUP "Options"
+    BEGIN
+        MENUITEM "&Add Download Item",          ID_ADD_NEW_FILE
+        MENUITEM "&Delete",                     ID_DELETE_SELECTED_FILE
+        MENUITEM "Delete &Completed Items",     ID_DELETE_COMPLETED_ITEMS
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties",                 ID_PROPERTIES_SELECTED_FILE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_SETTINGS DLGINIT
+BEGIN
+    IDC_COMBO_SIMULTANEOUS_DOWNLOADS, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_SIMULTANEOUS_DOWNLOADS, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_SIMULTANEOUS_DOWNLOADS, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_SIMULTANEOUS_DOWNLOADS, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_SIMULTANEOUS_DOWNLOADS, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_SIMULTANEOUS_DOWNLOADS, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_SIMULTANEOUS_DOWNLOADS, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_SIMULTANEOUS_DOWNLOADS, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_SIMULTANEOUS_DOWNLOADS, 0x403, 2, 0
+0x0039, 
+    0
+END
+
+IDD_LINK_PROPERTIES DLGINIT
+BEGIN
+    IDC_COMBO_XFER_MODE, 0x403, 7, 0
+0x6942, 0x616e, 0x7972, "\000" 
+    IDC_COMBO_XFER_MODE, 0x403, 6, 0
+0x5341, 0x4943, 0x0049, 
+    IDC_COMBO_STRIP, 0x403, 3, 0
+0x6f4e, "\000" 
+    IDC_COMBO_STRIP, 0x403, 4, 0
+0x6559, 0x0073, 
+    0
+END
+
+IDD_DIALOG_DOWNLOADDEMON DLGINIT
+BEGIN
+    IDC_COMBO_WHENDOWNLOAD, 0x403, 4, 0
+0x6f4e, 0x0077, 
+    IDC_COMBO_WHENDOWNLOAD, 0x403, 3, 0
+0x7441, "\000" 
+    IDC_COMBO_WHENDOWNLOAD, 0x403, 3, 0
+0x6e49, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 5, 0
+0x3a30, 0x3030, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 5, 0
+0x3a31, 0x3030, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 5, 0
+0x3a32, 0x3030, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 5, 0
+0x3a33, 0x3030, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 5, 0
+0x3a34, 0x3030, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 5, 0
+0x3a35, 0x3030, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 5, 0
+0x3a36, 0x3030, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 5, 0
+0x3a37, 0x3030, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 5, 0
+0x3a38, 0x3030, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 5, 0
+0x3a39, 0x3030, "\000" 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3031, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3131, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3231, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3331, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3431, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3531, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3631, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3731, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3831, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3931, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3032, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3132, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3232, 0x303a, 0x0030, 
+    IDC_COMBO_STARTTIME, 0x403, 6, 0
+0x3332, 0x303a, 0x0030, 
+    0
+END
+
+IDD_MODEM_ADVANCED DLGINIT
+BEGIN
+    IDC_COMBO_MODEMSCREEN, 0x403, 31, 0
+0x6f43, 0x6e6e, 0x6365, 0x2074, 0x6f4d, 0x6564, 0x206d, 0x6957, 0x646e, 
+0x776f, 0x2820, 0x6f43, 0x6e6e, 0x6365, 0x2974, "\000" 
+    IDC_COMBO_MODEMSCREEN, 0x403, 19, 0
+0x7542, 0x7973, 0x5320, 0x6769, 0x616e, 0x206c, 0x6957, 0x646e, 0x776f, 
+"\000" 
+    IDC_COMBO_MODEMSCREEN, 0x403, 17, 0
+0x6f4e, 0x4120, 0x736e, 0x6577, 0x2072, 0x6957, 0x646e, 0x776f, "\000" 
+    IDC_COMBO_MODEMSCREEN, 0x403, 13, 0
+0x6f4e, 0x4420, 0x6169, 0x206c, 0x6f54, 0x656e, "\000" 
+    IDC_COMBO_MODEMSCREEN, 0x403, 36, 0
+0x6944, 0x6373, 0x6e6f, 0x656e, 0x7463, 0x4d20, 0x646f, 0x6d65, 0x2820, 
+0x6f43, 0x6e6e, 0x6365, 0x6574, 0x2964, 0x5720, 0x6e69, 0x6f64, 0x0077, 
+
+    IDC_COMBO_MODEMSCREEN, 0x403, 30, 0
+0x6f43, 0x6e6e, 0x6365, 0x2074, 0x6f4d, 0x6564, 0x206d, 0x6957, 0x646e, 
+0x776f, 0x2820, 0x6143, 0x636e, 0x6c65, 0x0029, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_WAIT         BITMAP  DISCARDABLE     "res\\wait.bmp"
+IDB_BITMAP_CONNECT      BITMAP  DISCARDABLE     "res\\connect.bmp"
+IDB_BITMAP_TRANSFER     BITMAP  DISCARDABLE     "res\\transfer.bmp"
+IDB_BITMAP_FINISHED     BITMAP  DISCARDABLE     "res\\finished.bmp"
+IDB_BITMAP_STOPPED      BITMAP  DISCARDABLE     "res\\stopped.bmp"
+IDB_BITMAP_FAILED       BITMAP  DISCARDABLE     "res\\failed.bmp"
+IDB_BITMAP_TIMEDOUT     BITMAP  DISCARDABLE     "res\\timedout.bmp"
+IDB_BITMAP_LOOKINGFORFILE BITMAP  DISCARDABLE     "res\\looking.bmp"
+IDB_BITMAP_NOTFOUND     BITMAP  DISCARDABLE     "res\\NotFound.bmp"
+IDB_BITMAP_FILEOPENERR  BITMAP  DISCARDABLE     "res\\FileOpenErr.bmp"
+IDB_BITMAP_FILEWRITEERR BITMAP  DISCARDABLE     "res\\FileWriteErr.bmp"
+IDB_BITMAP_SKIPPED      BITMAP  DISCARDABLE     "res\\skipped.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            ID_MENU_SAVE_LIST_AS,   VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_MENU_OPEN_LIST,      VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_MENU_SAVE_LIST,      VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_MENU_SETTINGS,       VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Download Demon..."
+    IDS_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_AFXOLEINIT_FAILED   "Could not initialize OLE - Terminating Application"
+    IDS_DROPTARGET_REGISTER_FAILED 
+                            "OLE Registration Failed - Drag and Drop Will *NOT* Work."
+    IDS_MEMORY_ERROR        "Memory Error - Terminating Application"
+    IDS_RUNNING_TERMINATE   "Download Demon is currently actively downloading.\n\nAre you sure you want to terminate?"
+    IDS_BUTTON_NOTRUNNING   "Start Download"
+    IDS_BUTTON_RUNNING      "Cancel Download"
+    IDS_DEFAULT_USER        "<Default>"
+    IDS_DEFAULT_PW          "<DéFaUlT>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOTHING_TO_DOWNLOAD "Nothing to download."
+    IDS_MUST_SPECIFY_DOWNLOAD_DIR 
+                            "The download directory has not been specified.\n\nGo to File/Settings to configure this value."
+    IDS_REGISTRY_KEY        "SOFTWARE\\unHUman Software\\DownloadDemon"
+    IDS_RUNNING_CANCEL      "Download Demon is currently actively downloading.\n\nAre you sure you want to cancel these downloads?"
+    IDS_THREADS_RUNNING     "Downloads currently running: %d."
+    IDS_COMPLETION_TIME     "This should take fewer than %d seconds.  Try #%d."
+    IDS_STOPPED             "Stopped"
+    IDS_FAILURE             "Failure"
+    IDS_TIMEDOUT            "Retry: %d"
+    IDS_LOOKING             "Looking"
+    IDS_NOTFOUND            "Not Found"
+    IDS_CONNECT             "Connect"
+    IDS_ADD_FILE_DOWNLOAD   "Add Download Item"
+    IDS_OK                  "OK"
+    IDS_NOTSTARTED          "NS"
+    IDS_DEFAULTLOGIN        "anonymous"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEFAULTPASSWORD     "nobody@nowhere.com"
+    IDS_COL_STATUS          "Status"
+    IDS_COL_LINK            "Link"
+    IDS_COL_LOGIN           "Login"
+    IDS_COL_PASSWORD        "Password"
+    IDS_LINK_EXISTS         "Link already exists in list."
+    IDS_COL_XFER_MODE       "Mode"
+    IDS_MODE_BINARY         "Binary"
+    IDS_MODE_ASCII          "ASCII"
+    IDS_RESETSTOPPEDFAILEDSKIPPED 
+                            "There are some downloads that were stopped, skipped, or failed.\n\nWould you like me to reset them so they may download?"
+    IDS_FILEEXTENSION       ".DDL"
+    IDS_FILEDESCRIPTION     "Download Demon Lists (*.ddl)|*.ddl||"
+    IDS_ERRFILEOPEN         "Open Error"
+    IDS_ERRFILEWRITE        "Write Error"
+    IDS_INVALID_TIME_AT     "Time Format must in in the format hh:mm or hh:mmAM."
+    IDS_INVALID_TIME_IN     "Time must be in hh:mm or minutes format.\n24:00 or 1440 is the maximum allowable value."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_REGCODE     "Download Demon"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INVALID_PATH        "The path you selected as your Download Directory is invalid."
+    IDS_AGREE_TERMS         "You must agree to these terms to use Download Demon.\n\nDownload Demon will now close."
+    IDS_DEFAULT_DIALPARENT  "Connect To"
+    IDS_DEFAULT_DIALBUTTON  "Connect"
+    IDS_DEFAULT_DIALSIBLING1 "&User name:"
+    IDS_DEFAULT_DIALSIBLING2 "&Dial Properties..."
+    IDS_DEFAULT_DISCONNECTPARENT "Connected to "
+    IDS_DEFAULT_DISCONNECTBUTTON "Dis&connect"
+    IDS_DEFAULT_DISCONNECTSIBLING1 "Server type:"
+    IDS_DEFAULT_DISCONNECTSIBLING2 "&Protocols:"
+    IDS_DEFAULT_DISCONNECTSIBLING3 "Duration:"
+    IDS_INTERNET_CONNECTIONS_KEY "RemoteAccess\\Profile"
+    IDS_DIRLOOKUPBROKE      "ERROR: Directory lookup will not work."
+    IDS_DEFAULT_NODIALTONEPARENT "Dial-Up Networking"
+    IDS_DEFAULT_NODIALTONEBUTTON "OK"
+    IDS_DEFAULT_NODIALTONESIBLING1 "There is no dialtone."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEFAULT_NOANSWERPARENT "Dial-Up Networking"
+    IDS_DEFAULT_NOANSWERBUTTON "OK"
+    IDS_DEFAULT_NOANSWERSIBLING1 
+                            "The computer you are dialing in to is not answering."
+    IDS_SKIPPED             "Skipped"
+    IDS_DEFAULT_DIALSIBLING3 "&Save password"
+    IDS_DEFAULT_NODIALTONESIBLING2 "Dialing attempt"
+    IDS_DEFAULT_NODIALTONESIBLING3 "Connect to"
+    IDS_DEFAULT_BUSYPARENT  "Dial-Up Networking"
+    IDS_DEFAULT_BUSYBUTTON  "OK"
+    IDS_DEFAULT_BUSYSIBLING1 "The line is busy."
+    IDS_SURE_DISCONNECT     "You cancelled the download.  Are you sure you want to disconnect the modem?"
+    IDS_SURE_CLEARLIST      "Are you sure you want to clear the download list?"
+    IDS_LICENSE_PERIOD_OVER "The 30 day trial of Download Demon has expired.\nPlease contact human@unhuman.com to register.\n\nDownload Demon will now close."
+    IDS_INVALID_USERNAME_LICENSE 
+                            "Invalid License Information has been entered.\n\nPlease try again."
+    IDS_ALREADY_LICENSED    "This copy of Download Demon has already been registered.\nYou are entitled to free updates forever!\n\nThank you!"
+    IDS_THANK_YOU           "Thank you for registering Download Demon.\n\nYou are now entitled to free updates forever!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FAILURE_GETWINDIR   "FATAL ERROR: System Problem."
+    IDS_EXPIRED_NOTICE      "The 30 day trial of Download Demon has expired."
+    IDS_TRIAL_NOTICE        "Download Demon trial expires in %d days."
+    IDS_COL_STRIP           "Strip"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_NA                  "n/a"
+    IDS_ASK_REGISTER        "Download Demon is shareware.  Please register your copy.\n\nThis message will not be shown to registered users."
+    IDS_INVALID_EXTENSION   "You have entered an invalid extension.\n\nExtensions must begin with a period (.) and\ncontain only alpha-numeric characters."
+    IDS_EXTENSION_EXISTS    "The file extension you entered already exists in the list."
+    IDS_STRIP_DEFAULTS      ".exe.gif.html.htm.jpg.jpeg.zip"
+    IDS_COL_DESTINATION_DIR "Destination Directory"
+    IDS_DEFAULT_DESTDIR     "<Default>"
+    IDS_DEFAULT_CANCELBUTTON "Cancel"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\DownloadDemon.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

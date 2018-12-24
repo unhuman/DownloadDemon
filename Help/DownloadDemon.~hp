@@ -1,0 +1,24 @@
+; This file is maintained by WHD. Do not modify this file directly.
+;
+; This help project was created with Windows Help Designer V 2.1.6.4
+; *** UNREGISTERED ***
+; Windows Help Designer is copyright (C) 1996, 1997, by Nick Ameladiotis
+; Visit http://www.devgr.com for more informations
+;
+[OPTIONS]
+REPORT=Yes
+ERRORLOG=F:\DevStudio\MyProjects\Download Demon\Help\DownloadDemon.LOG
+
+[WINDOWS]
+main="", , 0,(255,255,225),(192,192,192),0  ; 
+
+[FILES]
+DownloadDemon.RTF
+
+[MAP]
+Topic1=0x1
+Topic2=0x2
+Topic3=0x3
+Topic4=0x4
+Topic5=0x5
+Topic6=0x6

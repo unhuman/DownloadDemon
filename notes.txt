@@ -1,0 +1,24 @@
+WINDOWS FOR MODEM CONNECTION:
+1st:
+PARENT: "Connect To"
+CHILD: "Connect"
+SIBLING: "&User name:"
+SIBLING: "&Password:"
+SIBLING: "&Save password"
+SIBLING: "Phone &number:"
+SIBLING: "Dialing &from:"
+SIBLING: "&Dial Properties..."
+SIBLING: "Cancel"
+
+2nd: No Answer
+PARENT: "Dial-Up Networking"
+CHILD: "OK"
+SIBLING: "The computer you are dialing in to is not answering.\nTry again later."
+
+3rd: Connected - wait to hang up
+PARENT: "Connected to [Connection]"
+CHILD: "Dis&connect"
+SIBLING: "Duration:"
+SIBLING: "&Details >>"
+SIBLING: "Server type:"
+SIBLING: "&Protocols:"

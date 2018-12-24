@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DownloadDemon - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WIN98\TEMP\RSP7184.TMP" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /FR"Release/" /Fp"Release/DownloadDemon.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\Development\DevStudio\MyProjects\Download Demon\DlgSettings.cpp"
+"D:\Development\DevStudio\MyProjects\Download Demon\DlgStoppingNotice.cpp"
+"D:\Development\DevStudio\MyProjects\Download Demon\DownloadDemon.cpp"
+"D:\Development\DevStudio\MyProjects\Download Demon\DownloadDemonDlg.cpp"
+"D:\Development\DevStudio\MyProjects\Download Demon\DownloadDemonDropTarget.cpp"
+"D:\Development\DevStudio\MyProjects\Download Demon\DownloadListCtrl.cpp"
+"D:\Development\DevStudio\MyProjects\Download Demon\ModemConnection.cpp"
+]
+Creating command line "cl.exe @C:\WIN98\TEMP\RSP7184.TMP" 
+Creating temporary file "C:\WIN98\TEMP\RSP7185.TMP" with contents
+[
+wininet.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/DownloadDemon.pdb" /machine:I386 /out:"Release/DownloadDemon.exe" 
+".\Release\ButtonPush.obj"
+".\Release\Dialup.obj"
+".\Release\DlgProperties.obj"
+".\Release\DlgRegister.obj"
+".\Release\DlgSettings.obj"
+".\Release\DlgSettingsModem.obj"
+".\Release\DlgStoppingNotice.obj"
+".\Release\DlgStripExtensions.obj"
+".\Release\DlgWaiver.obj"
+".\Release\DownloadDemon.obj"
+".\Release\DownloadDemonDlg.obj"
+".\Release\DownloadDemonDropTarget.obj"
+".\Release\DownloadListCtrl.obj"
+".\Release\Label.obj"
+".\Release\ModemConnection.obj"
+".\Release\Registry.obj"
+".\Release\StdAfx.obj"
+".\Release\DownloadDemon.res"
+]
+Creating command line "link.exe @C:\WIN98\TEMP\RSP7185.TMP"
+<h3>Output Window</h3>
+Compiling...
+DlgSettings.cpp
+DlgStoppingNotice.cpp
+DownloadDemon.cpp
+DownloadDemonDlg.cpp
+DownloadDemonDropTarget.cpp
+DownloadListCtrl.cpp
+ModemConnection.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\WIN98\TEMP\RSP71D3.TMP" with contents
+[
+/nologo /o"Release/DownloadDemon.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\ButtonPush.sbr"
+".\Release\Dialup.sbr"
+".\Release\DlgProperties.sbr"
+".\Release\DlgRegister.sbr"
+".\Release\DlgSettings.sbr"
+".\Release\DlgSettingsModem.sbr"
+".\Release\DlgStoppingNotice.sbr"
+".\Release\DlgStripExtensions.sbr"
+".\Release\DlgWaiver.sbr"
+".\Release\DownloadDemon.sbr"
+".\Release\DownloadDemonDlg.sbr"
+".\Release\DownloadDemonDropTarget.sbr"
+".\Release\DownloadListCtrl.sbr"
+".\Release\Label.sbr"
+".\Release\ModemConnection.sbr"
+".\Release\Registry.sbr"]
+Creating command line "bscmake.exe @C:\WIN98\TEMP\RSP71D3.TMP"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+DownloadDemon.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
