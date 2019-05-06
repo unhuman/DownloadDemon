@@ -338,9 +338,18 @@ void CDlgSettings::OnChangeEditDownloadDir()
 
 	UpdateData();
 
+	// validate standard path
 	if ((m_strDownloadDir.GetLength() >= 3) &&
 		(m_strDownloadDir.GetAt(1) == _T(':')) &&
 		(m_strDownloadDir.GetAt(2) == _T('\\')))
+	{
+		bEnableOK = TRUE;
+	}
+
+	// Allow network drives
+	if ((m_strDownloadDir.GetLength() >= 2) &&
+		(m_strDownloadDir.GetAt(0) == _T('\\')) &&
+		(m_strDownloadDir.GetAt(1) == _T('\\')))
 	{
 		bEnableOK = TRUE;
 	}
